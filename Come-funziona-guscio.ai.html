@@ -3,73 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolomeet Card – Trentino che parla</title>
+    <title>Come funziona Guscio</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #0066CC 0%, #00A3E0 100%);
-            color: white;
+            font-family: Arial, sans-serif;
+            background: #e8f1ff;
             margin: 0;
             padding: 20px;
-            text-align: center;
-        }
-        .card {
-            background: rgba(255,255,255,0.95);
             color: #1a1a1a;
-            border-radius: 20px;
-            padding: 30px 20px;
-            max-width: 400px;
-            margin: 20px auto;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            line-height: 1.6;
         }
-        .logo {
-            font-size: 28px;
-            font-weight: 800;
-            color: #0066CC;
-            margin-bottom: 10px;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        .slogan {
-            font-size: 14px;
-            color: #666;
+        h1 {
+            text-align: center;
+            color: #003d99;
             margin-bottom: 20px;
         }
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 18px;
-            margin: 12px 0;
-            border: none;
-            border-radius: 12px;
-            font-size: 18px;
-            font-weight: 700;
-            cursor: pointer;
-            text-decoration: none;
+        h2 {
+            color: #0055cc;
+            margin-top: 30px;
         }
-        .btn-primary {
-            background: #0066CC;
-            color: white;
-        }
-        .btn-audio {
-            background: #FF6600;
-            color: white;
-        }
-        .btn-sos {
-            background: #CC0000;
-            color: white;
-            animation: pulse 2s infinite;
-        }
-        .btn-secondary {
-            background: #f0f0f0;
-            color: #333;
-        }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(204, 0, 0, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(204, 0, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(204, 0, 0, 0); }
-        }
-        .info {
-            background: #E8F5FF;
-            border-left: 4px solid #0066CC;
+        .step {
+            background: #f0f6ff;
             padding: 15px;
-            margin: 20px 0;
-            border-radius: 8
+            border-left: 5px solid #0055cc;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        a.button {
+            display: block;
+            margin-top: 30px;
+            padding: 15px;
+            background: #0055cc;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        a.button:hover {
+            background: #003d99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Come funziona Guscio</h1>
+
+        <p>
+            Guscio è un sistema semplice e robusto pensato per fornire istruzioni rapide, 
+            sicure e sempre disponibili tramite TAG NFC, QR code o link diretto.
+        </p>
+
+        <h2>1. Attivazione</h2>
+        <div class="step">
+            Avvicina il telefono al TAG NFC oppure scansiona il QR.  
+            Il sistema apre automaticamente la pagina dedicata alle istruzioni.
+        </div>
+
+        <h2>2. Contenuti disponibili</h2>
+        <div class="step">
+            • Istruzioni operative<br>
+            • Procedure di sicurezza<br>
+            • Video dimostrativi<br>
+            • Documenti tecnici<br>
+            • Collegamenti rapidi
+        </div>
+
+        <h2>3. Funzionamento offline</h2>
+        <div class="step">
+            Se la rete è debole, Guscio mostra comunque le istruzioni essenziali 
+            grazie alla struttura HTML leggera e ottimizzata.
+        </div>
+
+        <h2>4. Aggiornamenti</h2>
+        <div class="step">
+            Ogni modifica nel repository viene pubblicata automaticamente su GitHub Pages.  
+            Nessuna manutenzione richiesta sul TAG.
+        </div>
+
+        <a class="button" href="index.html">⬅ Torna all’indice</a>
+    </div>
+</body>
+</html>
